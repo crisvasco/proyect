@@ -17,5 +17,4 @@ public class Resena {
     @ManyToOne
     @JoinColumn(name = "libro_id")
     private Libro libro;
-    // Getters y setters
 }

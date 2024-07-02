@@ -2,7 +2,6 @@ package com.example.proyect.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.util.List;
 
 @Entity
@@ -17,6 +16,4 @@ public class Genero {
 
     @OneToMany(mappedBy = "genero", cascade = CascadeType.ALL)
     private List<Libro> libros;
-
-    // Getters y setters
 }

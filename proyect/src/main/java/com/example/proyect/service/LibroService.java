@@ -13,23 +13,23 @@ public class LibroService {
     @Autowired
     private LibroRepository libroRepository;
 
-    // Mostrar libros
+    //Mostrar libros
     public List<Libro> getAllLibros(){
         return libroRepository.findAll();
     }
 
-    // Crear libro
+    //Crear libro
     public Libro createLibro(Libro libro){
         return libroRepository.save(libro);
     }
 
-    // Editar libro
+    //Editar libro
     public Libro updateLibro(Libro libro){
-        // El libro ya viene con el idLibro insertado desde el controlador.
+        //El libro ya viene con el idLibro insertado desde el controlador.
         return libroRepository.save(libro);
     }
 
-    // Eliminar libro
+    //Eliminar libro
     public void deleteLibroById(Long id){
         libroRepository.deleteById(id);
     }
